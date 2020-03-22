@@ -1,2 +1,3 @@
 # testapp
  
+excute demo.sql
