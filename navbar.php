@@ -11,13 +11,14 @@
       
       
     </ul>
-    <div class="d-flex flex-row-reverse">
+    
+  </div>
+  <div class="d-flex justify-content-end">
         <?php 
             if(isset($_SESSION["username"]))
             {
-                echo "welcome ".$_SESSION["username"];
+                echo "<i class='fas fa-user'> ".$_SESSION["username"]." </i>";
             }
         ?>
       </div>
-  </div>
 </nav>
