@@ -14,11 +14,20 @@
     
   </div>
   <div class="d-flex justify-content-end">
+  <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <?php 
             if(isset($_SESSION["username"]))
             {
                 echo "<i class='fas fa-user'> ".$_SESSION["username"]." </i>";
             }
         ?>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="logout.php">logout</a>
+          <a class="dropdown-item" href="resetPassword.php">reset password</a>
+        </div>
+      </div>
+        
       </div>
 </nav>
